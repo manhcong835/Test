@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #header{
+            display: flex;
+            justify-content:space-between;
+            background-color: aqua;
+        }
+        #header img{
+            width:120px;
+            mix-blend-mode: multiply;
+        }
+        #logo{
+            display: flex;
+            align-items:center;
+            
+        }
+        #cart{
+            background-color: #FF3399;
+            height: 30px;
+            width: 30px;
+            align-items: center;
+            justify-content: right;
+            border-radius: 50%;
+        }
+        #text{
+            display: flex;
+
+        }
+        #banner{
+            display:flex;
+            justify-content: space-between;
+        }
+        #menu li{
+            list-style-type: none;
+            display: inline-block;
+            padding: 10px;
+            margin: 10px;
+        }
+        #search{
+            align-content: center;
+            justify-content: flex-end;
+        }
+        #banner:hover{
+            background-color: #FF3399;
+        }
+        .title{
+            background-color: yellow;
+            display: inline-block;
+            justify-content: space-between;
+        }
+        .menu1{
+            float: left;
+            width: 120px;
+        }
+        .menu1 ul{
+            list-style-type: none;
+            width: 120px;
+            text-align: left;
+            padding: 0;
+            background-color: aqua;
+        }
+        .menu1 li{
+            width: auto;
+            height: 40px;
+            line-height: 40px;
+            position: relative;
+        }
+        .menu2{
+            position: absolute;
+            left:120px;
+            display: none;
+            top:0;
+        }
+        .menu1 li:hover{
+            background-color: blue;
+        }
+        .menu1 li:hover .menu2{
+            display: block;
+        }
+        .tt{
+            display: flex;
+            justify-content: space-between;
+        }
+        .content{
+            display: flex;
+        }
+        .product{
+            padding: 20px;
+            margin: 10px;
+        }
+        .product img{
+            width: 160px;
+            float:left;
+        }
+        .info{
+            text-align: center;
+            background-color: antiquewhite;
+        }
+        span{
+            color:red;
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <img src="LOGO.jpg">
+        <div id="logo">
+            <div id="cart">&#128722;</div>
+            <div id="text">
+                <pre>
+  Cart
+ 0 items
+                </pre>
+            </div>
+        </div>
+    </div>
+    <div id="banner">
+        <div id="menu">
+            <ul>
+                <li>HOME</li>
+                <li>BRANDS</li>
+                <li>GIFT CERTIFICATES</li>
+                <li>MORE</li>
+            </ul>
+        </div>
+        <div id="search">
+            <input type="text" placeholder="TÌM KIẾM">
+        </div>
+    </div>
+    <div id="tt">
+    <div class="menu1">
+        <ul>
+            <div class="title">CATEGORIES</div>
+            <li>Roses</li>
+            <li>Flower Basket
+                <ul class="menu2">
+                    <li>Macs</li>
+                    <li>Windows</li>
+                </ul>
+            </li>
+            <li>Gerberas</li>
+            <li>Orchids</li>
+        </ul>
+    </div>
+    <div class="content">
+        <div class="product">
+            <img src="LOGO.jpg">
+            <div class="info">
+                <div>Tên sản phẩm</div>
+                <div class="prize"><span>$110.00</span><del>$122.00</del></div>
+            </div>
+        </div>
+        <div class="product">
+            <img src="LOGO.jpg">
+            <div class="info">
+                <div>Tên sản phẩm</div>
+                <div class="prize"><span>$110.00</span><del>$122.00</del></div>
+            </div>
+        </div>
+        <div class="product">
+            <img src="LOGO.jpg">
+            <div class="info">
+                <div>Tên sản phẩm</div>
+                <div class="prize"><span>$110.00</span><del>$122.00</del></div>
+            </div>
+        </div>
+        <div class="product">
+            <img src="LOGO.jpg">
+            <div class="info">
+                <div>Tên sản phẩm</div>
+                <div class="prize"><span>$110.00</span><del>$122.00</del></div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
